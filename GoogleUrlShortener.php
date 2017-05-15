@@ -12,7 +12,6 @@ class GoogleUrlShortener extends Component
     function init()
     {
         parent::init();
-        $this->apiEndpoint .= $this->apiKey !== null ? '?key=' . $this->apiKey . '&' : '';
     }
 
     /**
@@ -40,6 +39,8 @@ class GoogleUrlShortener extends Component
                 'longUrl' => $longUrl
             ]);
 
-        return $request->content;
+        $response = $request->send();
+
+        return $response->data['id'];
     }
 }
