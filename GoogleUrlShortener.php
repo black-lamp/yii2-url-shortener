@@ -1,5 +1,5 @@
 <?php
-namespace bl\yii2\shortener;
+namespace bl\shortener;
 
 use yii\base\Component;
 use yii\httpclient\Client;
