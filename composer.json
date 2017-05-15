@@ -1,0 +1,21 @@
+{
+    "name": "black-lamp/yii2-url-shortener",
+    "description": "Yii2 Google url shortener component",
+    "keywords": ["yii2", "url", "shortener", "Google"],
+    "type": "yii2-extension",
+    "authors": [
+        {
+            "name": "Vadim Gutsulyak",
+            "email": "guts.vadim@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": ">=2.0.4",
+        "yiisoft/yii2-imagine": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "bl\\shortener\\": ""
+        }
+    }
+}
